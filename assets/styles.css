@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,700&family=Poppins:wght@400;600;700;800&display=swap");
+
+:root {
+  --background: #02050e;
+  --primary: #1e50ff;
+  --secondary: #272d37;
+  --btn-lg: #050d26;
+  --bg-azul-10: #e9eeff;
+  -bg-white: #fff;
+  --bg-electric: #f0fbff;
+  --nav-bg: #0f1525;
+
+  --text-gray: #adb9c7;
+  --text_white: #f3f4f6;
+
+  --fire: #ff6d00;
+  --electric: #64d3ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sams-serif;
+}
+
+header {
+  background: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 65px;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  gap: 5rem;
+}
+
+.navbar-list {
+  gap: 1rem;
+}
+
+.navbar-list a {
+  color: var(--text-gray);
+  font-size: 14px;
+}
+
+.navbar-list li:first-child > a {
+  font-weight: 600;
+  color: var(--text_white);
+}
+
+.logo {
+  height: 60px;
+}
+
+.cart-icon {
+  padding: 5px 10px;
+  height: 30px;
+  cursor: pointer;
+}
+
+main {
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+
+#hero {
+  max-width: 1200px;
+  margin-top: 65px;
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-size: 48px;
+  font-weight: 800;
+  min-width: 500px;
+  width: 80%;
+}
+
+.hero-info p {
+  font-size: 14px;
+  width: 70%;
+  color: var(--text-gray);
+}
+
+.hero-info b {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero-info a {
+  color: var(--text_white);
+  background: var(--primary);
+  padding: 8px 12px;
+  border-radius: 8px;
+}

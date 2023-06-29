@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,700&family=Poppins:wght@400;600;700;800&display=swap");
 
 :root {
-  --background: #02050e;
+  --background: black;
   --primary: #1e50ff;
   --secondary: #272d37;
   --btn-lg: #050d26;
@@ -10,7 +10,7 @@
   --bg-electric: #f0fbff;
   --nav-bg: #0f1525;
 
-  --text-gray: #adb9c7;
+  --text-gray: #c2ccd6;
   --text_white: #f3f4f6;
 
   --fire: #ff6d00;
@@ -27,7 +27,7 @@
 }
 
 header {
-  background: var(--secondary);
+  background: var(--background);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +63,7 @@ header {
 }
 
 .logo {
-  height: 60px;
+  height: 100px;
 }
 
 .cart-icon {
@@ -123,4 +123,23 @@ main {
   background: var(--primary);
   padding: 8px 12px;
   border-radius: 8px;
+}
+
+.info-pag {
+  background: rgb(20, 20, 20);
+  display: flex;
+  padding: 15px 100px;
+  width: 70%;
+  border-radius: 15px;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.botones {
+  margin: 1rem 1rem;
+}
+
+.keso {
+  height: 500px;
+  border-radius: 15px;
 }
